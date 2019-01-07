@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
+import org.hibernate.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -112,4 +113,19 @@ public class TaskController {
 		response.put("deleted", Boolean.TRUE);
 		return response;
 	}
+
+	/**
+	 * Deletes all tasks in the repository
+	 * @return			deletion status
+	 */
+	@DeleteMapping("/tasks")
+	public Map<String, Boolean> deleteAllTasks() {
+
+		taskRepository.deleteAll();
+		
+		Map<String, Boolean> response = new HashMap<>();
+		response.put("deleted", Boolean.TRUE);
+		return response;
+	}
+
 }
