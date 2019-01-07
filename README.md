@@ -41,5 +41,7 @@ The app defines following CRUD APIs:
 	PUT /api/v1/tasks/{taskId}
 
 	DELETE /api/v1/tasks/{taskId}
+    
+    DELETE /api/v1/tasks
 
 You can test them using postman or any other rest client. Postman tests are provided: Postman/ToDoList.postman_collection.json
