@@ -7,14 +7,13 @@ Requirements:
     Java - 1.8.x
     Maven - 3.x.x
     MySQL - 5.x.x
+    Postman 6.x.x
 
 Steps to Setup
 
 1. Clone the application
 
-***** GET CORRECT GIT ******
-
-git clone https://github.com/***.git
+git clone https://github.com/kathryndavies/todolist.git
 
 2. Create MySQL database
 
@@ -29,11 +28,9 @@ mysql> USE user_data;
 
 4. Build and run the app using maven
 
-***** ADD INSTRUCTIONS *****
-
 The app will start running at http://localhost:8080.
 
-The app defines following CRUD APIs.
+The app defines following CRUD APIs:
 
 GET /api/v1/tasks
 
@@ -45,4 +42,4 @@ PUT /api/v1/tasks/{taskId}
 
 DELETE /api/v1/tasks/{taskId}
 
-You can test them using postman or any other rest client. Postman tests are provided in **** GET DIRECTORY NAME, ADD INSTRUCTIONS ON HOW TO USE POSTMAN TESTS *****
+You can test them using postman or any other rest client. Postman tests are provided: Postman/ToDoList.postman_collection.json
