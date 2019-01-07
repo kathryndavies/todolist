@@ -349,6 +349,75 @@
 				"description": "POST: Testing for SQL Injection"
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/tasks",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "DELETE: Delete contents of table"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"hdkgdgks.......h\",\n\t\"isComplete\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "GET request: Task table should be empty after all tasks deleted"
+			},
+			"response": []
 		}
 	]
 }

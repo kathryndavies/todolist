@@ -18,7 +18,6 @@ Steps to Setup
 2. Create MySQL database
 
 	mysql> CREATE DATABASE user_data;
-	mysql> USE user_data;
 
 3. Change mysql username and password as per your installation
 
@@ -36,12 +35,14 @@ The app defines following CRUD APIs:
 
 	POST /api/v1/tasks
 
-	GET /api/v1/tasks/{taskId}
+	GET /api/v1/tasks/{id}
 
-	PUT /api/v1/tasks/{taskId}
+	PUT /api/v1/tasks/{d}
 
-	DELETE /api/v1/tasks/{taskId}
+	DELETE /api/v1/tasks/{d}
     
     DELETE /api/v1/tasks
 
-You can test them using postman or any other rest client. Postman tests are provided: Postman/ToDoList.postman_collection.json
+These can be tested using Postman or any other rest client. Several Postman tests are provided: Postman/ToDoList.postman_collection.json
+
+(Please note that the {id} values may need to be updated for tests 6, 7 & 8 (PUT, GET and DELETE by id) if any tasks have been added to the database prior to running the Postman tests.)
