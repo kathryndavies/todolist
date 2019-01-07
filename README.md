@@ -13,12 +13,12 @@ Steps to Setup
 
 1. Clone the application
 
-git clone https://github.com/kathryndavies/todolist.git
+	git clone https://github.com/kathryndavies/todolist.git
 
 2. Create MySQL database
 
-mysql> CREATE DATABASE user_data;
-mysql> USE user_data;
+	mysql> CREATE DATABASE user_data;
+	mysql> USE user_data;
 
 3. Change mysql username and password as per your installation
 
@@ -32,14 +32,14 @@ The app will start running at http://localhost:8080.
 
 The app defines following CRUD APIs:
 
-GET /api/v1/tasks
+	GET /api/v1/tasks
 
-POST /api/v1/tasks
+	POST /api/v1/tasks
 
-GET /api/v1/tasks/{taskId}
+	GET /api/v1/tasks/{taskId}
 
-PUT /api/v1/tasks/{taskId}
+	PUT /api/v1/tasks/{taskId}
 
-DELETE /api/v1/tasks/{taskId}
+	DELETE /api/v1/tasks/{taskId}
 
 You can test them using postman or any other rest client. Postman tests are provided: Postman/ToDoList.postman_collection.json
