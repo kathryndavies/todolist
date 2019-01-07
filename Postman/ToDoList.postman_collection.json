@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "b4853136-3583-4066-aa39-b4b9c1351e5a",
+		"name": "To Do List",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"hdkgdgks.......h\",\n\t\"isComplete\":true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "Initial GET request: Task table should be empty"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"Get groceries\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "POST: Adding first entry to table"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"Laundry\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "POST: Adding second entry to table"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"Mow Lawn\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "POST: Adding third entry to table"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "GET: Task table should contain 3 items"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 2,\n        \"content\": \"Laundry\",\n        \"isComplete\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"2"
+					]
+				},
+				"description": "PUT: Modifying task #2 (setting isComplete to true)"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"2"
+					]
+				},
+				"description": "GET (Single task): Confirm that task #2 has been updated"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"3"
+					]
+				},
+				"description": "DELETE: Deleting Task #3"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "GET: Confirm that only 2 tasks remain in the table"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:8080/api/v1/tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\":\"\\\";drop table tasks;\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				},
+				"description": "POST: Testing for SQL Injection"
+			},
+			"response": []
+		}
+	]
+}
