@@ -37,9 +37,9 @@ The app defines following CRUD APIs:
 
 	GET /api/v1/tasks/{id}
 
-	PUT /api/v1/tasks/{d}
+	PUT /api/v1/tasks/{id}
 
-	DELETE /api/v1/tasks/{d}
+	DELETE /api/v1/tasks/{id}
     
     DELETE /api/v1/tasks
 
