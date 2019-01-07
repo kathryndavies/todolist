@@ -22,15 +22,26 @@ import javax.persistence.Table;
 @Table(name = "tasks")
 public class Task {
 
+	
+	/**
+	 * Task ID (Generated Value)
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
+	/**
+	 * The content of the task
+	 */
 	private String content;
+	
+	/**
+	 * Flag to indicate whether or not the task is complete
+	 */
 	private boolean isComplete;
 
 	/**
-	 * Default Constructor (only exists for the sake of JPA)
-	 * Designated as protected, because it is not used directly
+	 * Default Constructor
 	 */
 	protected Task() {}
 
